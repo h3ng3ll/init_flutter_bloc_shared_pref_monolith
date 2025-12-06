@@ -4,21 +4,13 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
-import 'src/bloc/app_observer.dart';
-import 'src/bloc/dairy_bloc/dairy_bloc.dart';
-import 'src/bloc/habit_bloc/habit_bloc.dart';
-import 'src/bloc/moods_bloc/moods_bloc.dart';
-import 'src/bloc/nav_tutorial_cubit/nav_tutorial_cubit.dart';
-import 'src/bloc/profile_bloc/profile_bloc.dart';
-import 'src/bloc/settings_bloc/settings_bloc.dart';
-import 'src/bloc/task_bloc/task_bloc.dart';
+import 'src/bloc/core/app_observer.dart';
 import 'src/resources/localization/app_locale.dart';
 import 'src/resources/app_theme.dart';
-import 'src/resources/localization/app_localizations.dart';
 import 'src/routes/app_routes_paths.dart';
 import 'src/routes/init_router.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
+import 'src/widgets/custom_scroll_behavior.dart';
 
 
 void main() {
