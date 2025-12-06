@@ -8,6 +8,9 @@ Initial build for monolith structure.
 
 #### Global install
 1. mason add -g init_flutter_bloc_shared_pref_monolith --git-url  https://github.com/h3ng3ll/init_flutter_bloc_shared_pref_monolith.git
+
+or run directly
+mason make --git-url https://github.com/h3ng3ll/init_flutter_bloc_shared_pref_monolith.git --path bricks/my_template
 #### run script after isntall
 2. mason make init_flutter_bloc_shared_pref_monolith
 #### enter requirement arguments
