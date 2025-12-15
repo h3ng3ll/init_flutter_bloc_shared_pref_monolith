@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import 'src/bloc/core/app_observer.dart';
+import 'src/resources/localization/app_localizations.dart';
 import 'src/resources/localization/app_locale.dart';
 import 'src/resources/app_theme.dart';
 import 'src/routes/app_routes_paths.dart';
