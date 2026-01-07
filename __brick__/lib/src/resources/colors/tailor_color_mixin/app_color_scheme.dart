@@ -79,64 +79,64 @@ class AppColorScheme extends ThemeExtension<AppColorScheme>
   });
 
   factory AppColorScheme.light() => AppColorScheme(
-    primary: AppColors.black.value,
-    onPrimary: AppColors.white.value,
-    secondary: AppColors.black.value,
-    onSecondary: AppColors.black.value,
-    inactiveSecondary: AppColors.black.value,
-    surface: AppColors.black.value,
-    onSurface: AppColors.black.value,
-    background: AppColors.white.value,
+    primary: AppColors.black,
+    onPrimary: AppColors.white,
+    secondary: AppColors.black,
+    onSecondary: AppColors.black,
+    inactiveSecondary: AppColors.black,
+    surface: AppColors.black,
+    onSurface: AppColors.black,
+    background: AppColors.white,
 
-    onBackground: AppColors.white.value,
+    onBackground: AppColors.white,
 
-    error: AppColors.white.value,
+    error: AppColors.white,
 
-    onError: AppColors.white.value,
-    unselectedItem: AppColors.black.value,
+    onError: AppColors.white,
+    unselectedItem: AppColors.black,
 
-    selectedItem: AppColors.black.value,
+    selectedItem: AppColors.black,
   );
 
   ///  not used
   factory AppColorScheme.dark() => AppColorScheme(
-    primary: AppColors.black.value,
+    primary: AppColors.black,
 
     ///  not used
-    onPrimary: AppColors.black.value,
+    onPrimary: AppColors.black,
 
     ///  not used
-    secondary: AppColors.white.value,
+    secondary: AppColors.white,
 
     ///  not used
-    onSecondary: AppColors.black.value,
+    onSecondary: AppColors.black,
 
     ///  not used
-    inactiveSecondary: AppColors.white.value,
+    inactiveSecondary: AppColors.white,
 
     ///  not used
-    surface: AppColors.white.value,
+    surface: AppColors.white,
 
     ///  not used
-    onSurface: AppColors.black.value,
+    onSurface: AppColors.black,
 
     ///  not used
-    background: AppColors.white.value,
+    background: AppColors.white,
 
     ///  not used
-    onBackground: AppColors.white.value,
+    onBackground: AppColors.white,
 
     ///  not used
-    error: AppColors.white.value,
+    error: AppColors.white,
 
     ///  not used
-    onError: AppColors.white.value,
+    onError: AppColors.white,
 
     ///  not used
-    unselectedItem: AppColors.black.value,
+    unselectedItem: AppColors.black,
 
     ///  not used
-    selectedItem: AppColors.black.value,
+    selectedItem: AppColors.black,
   );
 
   /// Return color scheme for app from context

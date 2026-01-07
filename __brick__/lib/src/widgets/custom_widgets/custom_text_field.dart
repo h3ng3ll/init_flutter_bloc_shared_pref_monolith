@@ -2,8 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../resources/colors/app_colors.dart';
-import '../resources/text/app_typography_theme.dart';
+import '../../resources/colors/app_colors.dart';
+import '../../resources/text/app_typography_theme.dart';
+
 
 class CustomTextField extends StatelessWidget {
   final String? hintText;
@@ -92,7 +93,7 @@ class CustomTextField extends StatelessWidget {
   }) : borderRadius =
            borderRadius ??
            BorderRadius.circular(
-             5.0,
+             15.0,
            );
 
   @override
@@ -104,9 +105,9 @@ class CustomTextField extends StatelessWidget {
       maxLines: maxLines,
       style:
           style ??
-          textTheme.r10.copyWith(
+          textTheme.r16.copyWith(
             wordSpacing: 2.0,
-            color: AppColors.black.value,
+            color: AppColors.black,
           ),
       scrollController: scrollController,
       scrollPhysics: scrollPhysics,
@@ -150,7 +151,7 @@ class CustomTextField extends StatelessWidget {
                     buttonItem,
                   ),
                   style: textTheme.r14.copyWith(
-                    color: AppColors.black.value,
+                    color: AppColors.black,
                     wordSpacing: 2.0,
                   ),
                 ),
@@ -164,7 +165,7 @@ class CustomTextField extends StatelessWidget {
         isDense: isDense,
         hint: hint,
         counterText: counterText,
-        fillColor: fillColor ?? AppColors.white.value,
+        fillColor: fillColor ?? Colors.transparent,
         hintText: hintText,
         contentPadding:
             padding ??
@@ -174,24 +175,52 @@ class CustomTextField extends StatelessWidget {
             ),
         hintStyle:
             hintStyle ??
-            textTheme.m12.copyWith(
-              color: AppColors.black.value.withValues(
+            textTheme.r16.copyWith(
+              color: AppColors.black.withValues(
                 alpha: 0.5,
               ),
             ),
         labelText: labelText,
         enabledBorder:
             enabledBorder ??
-            OutlineInputBorder(
+            UnderlineInputBorder(
               borderSide: BorderSide(
                 color: Colors.transparent,
               ),
+              borderRadius: borderRadius,
             ),
-        border: border,
-        focusedBorder: focusedBorder ?? InputBorder.none,
 
-        focusedErrorBorder: focusedErrorBorder ?? InputBorder.none,
-        errorBorder: errorBorder ?? InputBorder.none,
+        border:
+            border ??
+            UnderlineInputBorder(
+              borderSide: BorderSide.none,
+              borderRadius: borderRadius,
+            ),
+        focusedBorder:
+            focusedBorder ??
+            OutlineInputBorder(
+              borderSide: BorderSide(
+                color: AppColors.black,
+              ),
+              borderRadius: borderRadius,
+            ),
+
+        focusedErrorBorder:
+            focusedErrorBorder ??
+            OutlineInputBorder(
+              borderRadius: borderRadius,
+              borderSide: BorderSide(
+                color: AppColors.black,
+              ),
+            ),
+        errorBorder:
+            errorBorder ??
+            OutlineInputBorder(
+              borderSide: BorderSide(
+                color: AppColors.black,
+              ),
+              borderRadius: borderRadius,
+            ),
         errorStyle: textTheme.r14.copyWith(),
         prefix: prefix,
         prefixIcon: prefixIcon,

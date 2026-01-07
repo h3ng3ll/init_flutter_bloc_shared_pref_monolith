@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../resources/colors/app_colors.dart';
+import '../../resources/colors/app_colors.dart';
 
 
 class CustomAnimatedSmoothIndicator extends StatelessWidget {
@@ -23,8 +23,8 @@ class CustomAnimatedSmoothIndicator extends StatelessWidget {
       count: count,
       onDotClicked: onDotClicked,
       effect: WormEffect(
-        dotColor: AppColors.white.value,
-        activeDotColor: AppColors.black.value,
+        dotColor: AppColors.white,
+        activeDotColor: AppColors.black,
         dotWidth: 10.0,
         dotHeight: 10.0,
       ),

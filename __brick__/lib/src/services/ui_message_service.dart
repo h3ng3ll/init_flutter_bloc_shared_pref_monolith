@@ -13,9 +13,9 @@ class UiMessageService {
       // gravity: ToastGravity.BOTTOM_LEFT,
       webPosition: 'center',
       // webBgColor:
-      //     ' linear-gradient(to right ${AppColors.pictorialCarmine.value.toHex(
+      //     ' linear-gradient(to right ${AppColors.pictorialCarmine .toHex(
       //       leadingHashSign: false,
-      //     )} ${AppColors.persia|nPink.value.toHex(
+      //     )} ${AppColors.persia|nPink .toHex(
       //       leadingHashSign: false,
       //     )})',
     );
@@ -28,9 +28,9 @@ class UiMessageService {
     await Fluttertoast.showToast(
       msg: msg,
       timeInSecForIosWeb: timeInSecondsDuration,
-      textColor: AppColors.white.value,
+      textColor: AppColors.white,
       webPosition: 'center',
-      backgroundColor: AppColors.black.value,
+      backgroundColor: AppColors.black,
     );
   }
 
@@ -41,8 +41,8 @@ class UiMessageService {
     await Fluttertoast.showToast(
       msg: msg,
       timeInSecForIosWeb: timeInSecondsDuration,
-      textColor: AppColors.white.value,
-      // backgroundColor: AppColors.verseGreen.value,
+      textColor: AppColors.white,
+      // backgroundColor: AppColors.verseGreen ,
       webPosition: 'center',
     );
   }

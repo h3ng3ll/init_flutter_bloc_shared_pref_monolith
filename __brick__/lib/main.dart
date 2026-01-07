@@ -11,7 +11,7 @@ import 'src/resources/app_theme.dart';
 import 'src/routes/app_routes_paths.dart';
 import 'src/routes/init_router.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'src/widgets/custom_scroll_behavior.dart';
+import 'src/widgets/custom_widgets/custom_scroll_behavior.dart';
 
 
 void main() {

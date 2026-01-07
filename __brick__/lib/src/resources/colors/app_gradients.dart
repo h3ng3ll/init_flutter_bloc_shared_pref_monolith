@@ -7,8 +7,8 @@ abstract class AppGradients {
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
     colors: [
-      AppColors.black.value,
-      AppColors.white.value,
+      AppColors.black,
+      AppColors.white,
     ],
   );
 }

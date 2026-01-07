@@ -1,3 +1,4 @@
 {
-  "helloWorld": "Hello World!"
+  "pleaseGrantFullAccess": "Please grant permission to  get full access to media",
+  "pleaseGrantAccess": "Please grant access"
 }

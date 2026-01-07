@@ -6,27 +6,44 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double? height;
   final double? leadingWidth;
   final EdgeInsetsGeometry? actionsPadding;
+  final bool centerTitle;
+  final Widget? title;
+  final Color? backgroundColor;
+  final ShapeBorder? shape;
 
   const CustomAppBar({
     super.key,
     this.actions,
     this.leading,
-    this.leadingWidth,
+    this.leadingWidth = 60,
     this.actionsPadding = const EdgeInsets.symmetric(
       horizontal: 25.0,
     ),
     this.height = 80.0,
+    this.centerTitle = true,
+    this.title,
+    this.backgroundColor,
+    this.shape,
   });
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leadingWidth: leadingWidth ,
-      leading: leading,
+      leadingWidth: leadingWidth,
+      title: title,
+      centerTitle: centerTitle,
+      leading: Padding(
+        padding: const EdgeInsets.only(
+          left: 8.0,
+        ),
+        child: Center(child: leading),
+      ),
       actionsPadding: actionsPadding,
-      backgroundColor: Colors.transparent,
+      backgroundColor: backgroundColor ?? Colors.transparent,
       toolbarHeight: height ?? 120,
       actions: actions,
+      shape: shape,
+
     );
   }
 
