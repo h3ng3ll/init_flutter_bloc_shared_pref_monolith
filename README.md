@@ -9,6 +9,8 @@ Initial build for monolith structure.
 #### Install mason 
 dart pub global activate mason_cli
 
+### fast way to clean old version
+rm -rf  ~/.mason-cache
 #### Global install
 1. mason add -g init_flutter_bloc_shared_pref_monolith --git-url  https://github.com/h3ng3ll/init_flutter_bloc_shared_pref_monolith.git
 
