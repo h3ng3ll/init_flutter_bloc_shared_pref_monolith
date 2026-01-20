@@ -4,6 +4,13 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
+{{#use_profile}}
+import 'src/bloc/profile_bloc/profile_bloc.dart';
+{{/use_profile}}
+{{#use_settings}}
+  import 'src/bloc/settings_bloc/settings_bloc.dart';
+{{/use_settings}}
+
 import 'src/bloc/core/app_observer.dart';
 import 'src/resources/localization/app_localizations.dart';
 import 'src/resources/localization/app_locale.dart';
@@ -52,6 +59,23 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
+
+      {{#use_profile}}
+      BlocProvider(
+         create: (_) => ProfileBloc()
+        ..add(
+         ProfileEvent.load(),
+        ),
+      ),
+      {{/use_profile}}
+      {{#use_settings}}
+      BlocProvider(
+      create: (_) => ProfileBloc()
+      ..add(
+          ProfileEvent.load(),
+        ),
+      ),
+      {{/use_settings}}
         // BlocProvider(
         //   create: (_) => TaskBloc()
         //     ..add(

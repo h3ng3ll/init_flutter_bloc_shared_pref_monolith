@@ -9,8 +9,6 @@ import '../models/profile/profile.dart';
 {{#use_settings}}
 import '../models/settings/settings.dart';
 {{/use_settings}}
-import '../models/user_achievement/user_achievement.dart';
-
 
 part 'hive_adapters.g.dart';
 
