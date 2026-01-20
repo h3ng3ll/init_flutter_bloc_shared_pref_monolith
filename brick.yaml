@@ -31,3 +31,43 @@ vars:
     description: Init project name
     default: test_project
     prompt: What Your project name?
+
+
+#  use_splash_loader:
+#    type: boolean
+#    prompt: Use Splash screen?
+#
+#  use_nav_tutorial:
+#    type: boolean
+#    prompt: Use Navigation Tutorial state ?
+
+  use_profile:
+    type: boolean
+    prompt: Add user profile?
+    default: true
+#
+#  use_settings:
+#    type: boolean
+#    prompt: Add user settings ?
+#    default: true
+#
+#  use_calendar:
+#    type: boolean
+#    prompt: Add Calendar logic ?
+#    default: true
+#
+#  use_home:
+#    type: boolean
+#    prompt: Use Default home template ?
+#
+#  use_no_connection:
+#    type: boolean
+#    prompt: Use no connection screen ?
+#
+#  use_privacy_policy:
+#    type: boolean
+#    prompt: Use privacy policy screen ?
+#
+#  use_terms_of_use:
+#    type: boolean
+#    prompt: Use terms of use screen ?
