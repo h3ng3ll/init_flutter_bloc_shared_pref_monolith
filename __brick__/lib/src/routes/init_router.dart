@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../screens/profile_screen/profile_screen.dart';
-// import '../screens/settings_screen/settings_screen.dart';
+import '../screens/settings_screen/settings_screen.dart';
 import 'app_routes_paths.dart';
 
 final GlobalKey<NavigatorState> rootKey = GlobalKey<NavigatorState>();
@@ -34,8 +34,8 @@ GoRouter initRouter({String? initialRoute}) => GoRouter(
     {{/use_profile}}
    {{#use_settings}}
     GoRoute(
-      path: AppRoutesPaths.profile,
-      name: AppRoutesPaths.profile,
+      path: AppRoutesPaths.settings,
+      name: AppRoutesPaths.settings,
       builder: (context, state) {
         return const SettingsScreen();
       },

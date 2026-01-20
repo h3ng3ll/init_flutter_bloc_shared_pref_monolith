@@ -5,21 +5,20 @@ import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
 
-import '../../../bloc/profile_bloc/profile_bloc.dart';
-import '../../../bloc/settings_bloc/settings_bloc.dart';
+import '../../bloc/profile_bloc/profile_bloc.dart';
+import '../../bloc/settings_bloc/settings_bloc.dart';
 
 
-import '../../../resources/colors/app_colors.dart';
-import '../../../resources/localization/app_localizations.dart';
-import '../../../resources/text/app_typography_theme.dart';
-import '../../../routes/app_routes_paths.dart';
-import '../../../services/navigation_lock.dart';
+import '../../resources/colors/app_colors.dart';
+import '../../resources/localization/app_localizations.dart';
+import '../../resources/text/app_typography_theme.dart';
+import '../../routes/app_routes_paths.dart';
+import '../../services/navigation_lock.dart';
 
 
 
-import '../../../widgets/custom_widgets/custom_app_bar.dart';
-import '../../../widgets/horizontal_padding.dart';
-
+import '../../widgets/custom_widgets/custom_app_bar.dart';
+import '../../widgets/horizontal_padding.dart';
 
 
 class SettingsScreen extends StatefulWidget {
