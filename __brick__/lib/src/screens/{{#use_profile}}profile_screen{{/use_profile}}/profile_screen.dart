@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:typed_data';
 
-import '../../../../bloc/profile_bloc/profile_bloc.dart';
+import '../../bloc/profile_bloc/profile_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
@@ -55,7 +55,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     // if (file != null) {
     //   image = file.readAsBytesSync();
     //   setState(() {});
-    }
+    // }
   }
 
   void onTapSave() {
