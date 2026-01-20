@@ -13,7 +13,9 @@ import '../models/nav_tutorial/nav_tutorial.dart';
 {{#use_profile}}
 import '../models/profile/profile.dart';
 {{/use_profile}}
+{{#use_settings}}
 import '../models/settings/settings.dart';
+{{/use_settings}}
 import '../models/user_achievement/user_achievement.dart';
 
 
@@ -31,7 +33,9 @@ part 'hive_adapters.g.dart';
   AdapterSpec<Badge>(),
   AdapterSpec<Achievement>(),
   AdapterSpec<AchievementProgress>(),
+  {{#use_settings}}
   AdapterSpec<Settings>(),
+  {{/use_settings}}
 
 ])
 /// HiveAdapters fuse

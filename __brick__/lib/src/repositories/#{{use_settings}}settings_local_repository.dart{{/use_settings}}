@@ -1,0 +1,35 @@
+import '../databases/hive_database.dart';
+import '../models/settings/settings.dart';
+
+class SettingsLocalRepository {
+  final HiveDatabase _hiveDatabase = HiveDatabase.instance;
+
+  final _key = 'settings';
+
+  SettingsLocalRepository._();
+
+  static final instance = SettingsLocalRepository._();
+
+  Future<void> update(
+    Settings settings,
+  ) async {
+    final box = await _hiveDatabase.getBox<Settings>(
+      _key,
+    );
+
+    await box.put(
+      _key,
+      settings,
+    );
+  }
+
+  Future<Settings?> get() async {
+    final box = await _hiveDatabase.getBox<Settings>(
+      _key,
+    );
+    final settings = box.get(
+      _key,
+    );
+    return settings;
+  }
+}

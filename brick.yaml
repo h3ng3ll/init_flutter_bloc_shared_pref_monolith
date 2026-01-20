@@ -45,12 +45,12 @@ vars:
     type: boolean
     prompt: Add user profile?
     default: true
-#
-#  use_settings:
-#    type: boolean
-#    prompt: Add user settings ?
-#    default: true
-#
+
+  use_settings:
+    type: boolean
+    prompt: Add user settings ?
+    default: true
+
 #  use_calendar:
 #    type: boolean
 #    prompt: Add Calendar logic ?
