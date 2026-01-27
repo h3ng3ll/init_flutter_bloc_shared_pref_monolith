@@ -4,22 +4,38 @@
 
 Initial build for monolith structure.
 
-## Install  
+Local Check:
 
-#### Install mason 
+mason add feature --path bricks/feature
+mason make feature
+
+## Install
+
+#### Install mason
+
 dart pub global activate mason_cli
 
 ### fast way to clean old version
+
 rm -rf  ~/.mason-cache
+
 #### Global install
-1. mason add -g init_flutter_bloc_shared_pref_monolith --git-url  https://github.com/h3ng3ll/init_flutter_bloc_shared_pref_monolith.git
+
+1. mason add -g init_flutter_bloc_shared_pref_monolith
+   --git-url  https://github.com/h3ng3ll/init_flutter_bloc_shared_pref_monolith.git  --git-path
+   bricks/project
 
 or run directly
-mason make --git-url https://github.com/h3ng3ll/init_flutter_bloc_shared_pref_monolith.git 
+mason make --git-url https://github.com/h3ng3ll/init_flutter_bloc_shared_pref_monolith.git
+
 #### run script after isntall
+
 2. mason make init_flutter_bloc_shared_pref_monolith
+
 #### enter requirement arguments
+
 3. enter your project name
+
 ## Getting Started 🚀
 
 This is a starting point for a new brick.
@@ -33,9 +49,15 @@ A few resources to get you started if this is your first brick template:
 - [Meet Mason: Flutter Vikings 2022][7]
 
 [1]: https://github.com/felangel/mason
+
 [2]: https://docs.brickhub.dev
+
 [3]: https://verygood.ventures/blog/code-generation-with-mason
+
 [4]: https://youtu.be/G4PTjA6tpTU
+
 [5]: https://youtu.be/qjA0JFiPMnQ
+
 [6]: https://youtu.be/o8B1EfcUisw
+
 [7]: https://youtu.be/LXhgiF5HiQg
