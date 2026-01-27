@@ -9,6 +9,7 @@ import '../models/profile/profile.dart';
 {{#use_settings}}
 import '../models/settings/settings.dart';
 {{/use_settings}}
+import '../models/nav_tutorial/nav_tutorial.dart';
 
 part 'hive_adapters.g.dart';
 
@@ -19,7 +20,7 @@ part 'hive_adapters.g.dart';
   {{#use_settings}}
   AdapterSpec<Settings>(),
   {{/use_settings}}
-
+  AdapterSpec<NavTutorial>(),
 ])
 /// HiveAdapters fuse
 class HiveAdapters {}

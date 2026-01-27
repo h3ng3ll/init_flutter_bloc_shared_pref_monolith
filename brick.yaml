@@ -51,10 +51,14 @@ vars:
     prompt: Add user settings ?
     default: true
 
-#  use_calendar:
-#    type: boolean
-#    prompt: Add Calendar logic ?
-#    default: true
+  use_calendar:
+    type: boolean
+    prompt: Add Calendar logic ?
+    default: true
+  use_splash:
+    type: boolean
+    prompt: Add Splash screen ?
+    default: true
 #
 #  use_home:
 #    type: boolean

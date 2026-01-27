@@ -10,7 +10,8 @@ import 'src/bloc/profile_bloc/profile_bloc.dart';
 {{#use_settings}}
   import 'src/bloc/settings_bloc/settings_bloc.dart';
 {{/use_settings}}
-
+import 'src/bloc/nav_tutorial_cubit/nav_tutorial_cubit.dart';
+import 'src/databases/hive_database.dart';
 import 'src/bloc/core/app_observer.dart';
 import 'src/resources/localization/app_localizations.dart';
 import 'src/resources/localization/app_locale.dart';
@@ -21,13 +22,16 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'src/widgets/custom_widgets/custom_scroll_behavior.dart';
 
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
+
+  /// prepare Hive db
+  await HiveDatabase.instance.init();
 
   /// register global observer for debug convenient
   if (kDebugMode) {
@@ -59,7 +63,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-
+      BlocProvider(
+        create: (_) => NavTutorialCubit()..fetch(),
+      ),
       {{#use_profile}}
       BlocProvider(
          create: (_) => ProfileBloc()
